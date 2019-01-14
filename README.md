@@ -35,7 +35,7 @@ digital_outputs:
 
 Start docker container
 
-$ `docker run --privileged -it --rm -v /srv/config.yml:/srv/config.yml -v /dev/gpiochip0:/dev/gpiochip0 elmariofredo/raspberrypi-thermostat-mqtt-switch-homeassistant:arm32v7-0.1`
+$ `docker run -n thermostat_switch --privileged -d -v /srv/config.yml:/srv/config.yml elmariofredo/raspberrypi-thermostat-mqtt-switch-homeassistant:arm32v7-0.1`
 
 ## 2. Add switch config to homeassistant `configuration.yaml` file
 
